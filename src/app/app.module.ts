@@ -10,13 +10,18 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { HeaderComponent } from './components/header/header.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { TodoComponent } from './components/todo/todo.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { NewTodoComponent } from './components/new-todo/new-todo.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
-    HeaderComponent
+    HeaderComponent,
+    TodoComponent,
+    NewTodoComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
