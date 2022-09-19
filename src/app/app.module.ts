@@ -13,6 +13,12 @@ import {MatDividerModule} from '@angular/material/divider';
 import { TodoComponent } from './components/todo/todo.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { NewTodoComponent } from './components/new-todo/new-todo.component';
+import { TodoContainerComponent } from './todo-container/todo-container.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule }   from '@angular/forms'
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -21,7 +27,8 @@ import { NewTodoComponent } from './components/new-todo/new-todo.component';
     TodoListComponent,
     HeaderComponent,
     TodoComponent,
-    NewTodoComponent
+    NewTodoComponent,
+    TodoContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,13 @@ import { NewTodoComponent } from './components/new-todo/new-todo.component';
     MatButtonModule,
     MatCardModule,
     MatDividerModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
