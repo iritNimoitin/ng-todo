@@ -30,7 +30,7 @@ export class NewTodoComponent implements OnInit {
       id:uuidv4(),
       title: formValues.title,
       description:formValues.description,
-      endDate:formValues.endDate,
+      endDate:formValues.date,
       isCompleted:false,
       isArchived:false,
       selected:false

@@ -19,6 +19,7 @@ import {MatInputModule} from '@angular/material/input';
 import { FormsModule }   from '@angular/forms'
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { CountDownComponent } from './components/count-down/count-down.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     HeaderComponent,
     TodoComponent,
     NewTodoComponent,
-    TodoContainerComponent
+    TodoContainerComponent,
+    CountDownComponent
   ],
   imports: [
     BrowserModule,
